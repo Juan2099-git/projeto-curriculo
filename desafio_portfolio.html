@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio-Demonstração</title>
+</head>
+<body>
+    <H1>Juan Diego da Silva Bassetto Assumpção - Desenvolvedor Web</H1>
+
+    <ul style="list-style-type: disc;">
+        <li>Sobre</li>
+        <li>Projetos</li>
+        <li>Contato</li>
+    </ul>
+    <hr>
+
+    <h1>Sobre Mim</h1>
+    <br>
+    <br>
+    <a>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI.</a><br>
+    <br>
+    <a>Tenho conhecimento em HTML, CSS e estou aprendendo JavaScript.</a>
+    <br>
+    <h1>Minhas Habilidades:</h1>
+    <ul style="list-style-type: disc;">
+        <li>HTML5 Semântico</li>
+        <li>CSS3 e Responsividade</li>
+        <li>Formulários e Validação</li>
+        <li>Estruturação de dados</li>
+    </ul>
+    <hr>
+
+    <h1>Meus Projetos</h1>
+    <style>
+        /*Define a largura da tabela para 50% da largura do elemento pai (normalmente o body)*/
+        table{
+            width: 50%; /* tabela fica proporcionalmente menor e mais compacta */
+
+            /* Remove o espaçamento entre bordas adjacentes para apresentar bordas únicas */
+            border-collapse: collapse;
+
+            /* Espaço inferior para separar visualmente da proxima seção */
+            margin-bottom: 20px;
+        }
+
+
+        th,td{
+            border: 1px solid black; /* bordas pretas sólidas de 1px */
+            padding: 8px; /* espaçamento interno para "respirar o conteúdo" */
+        }
+
+        /* Estiliza as células do cabeçãlho */
+        th{
+            background-color: #333 ; /* fundo escuro para destaque */
+            color: white; /* texto branco para contraste e legibidade */
+        }
+
+        /* Estiliza a linha do rodapé da tabela */
+        tfoot {
+            background-color: #fff999; /* fundo amarelo para chamar atenção */
+            font-weight: bold; /* texto em negrito para importância */
+        }
+
+        td.num-right {
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    
+     <table>
+        <thead>
+            <tr>
+                <th>Projeto</th>
+                <th>Tecnologias</th>
+                <th>Status</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Norte</td>
+                <td class="num-right" style="white-space: nowrap;">R$ 10.000</td>
+                <td class="num-right" style="white-space: nowrap;">R$ 12.000</td>
+                <td class="num-right" style="white-space: nowrap;">R$ 15.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+             <tr>
+                <td></td>
+                <td class="num-right" style="white-space: nowrap;"></td>
+                <td class="num-right" style="white-space: nowrap;">Concluido</td>
+                <td class="num-right" style="white-space: nowrap;">R$ 15.000</td>
+                
+            </tr>
+        </tfoot>
+            <tr>
+                <td>Identidade Visual - Itaú</td>
+                <td>Github, VScode</td>
+            </tr>
+     </table>
+</body>
+</html>
