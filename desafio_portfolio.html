@@ -6,99 +6,113 @@
 </head>
 <body>
     <H1>Juan Diego da Silva Bassetto Assumpção - Desenvolvedor Web</H1>
-
-    <ul style="list-style-type: disc;">
-        <li>Sobre</li>
-        <li>Projetos</li>
-        <li>Contato</li>
-    </ul>
-    <hr>
-
-    <h1>Sobre Mim</h1>
-    <br>
-    <br>
-    <a>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI.</a><br>
-    <br>
-    <a>Tenho conhecimento em HTML, CSS e estou aprendendo JavaScript.</a>
-    <br>
-    <h1>Minhas Habilidades:</h1>
-    <ul style="list-style-type: disc;">
-        <li>HTML5 Semântico</li>
-        <li>CSS3 e Responsividade</li>
-        <li>Formulários e Validação</li>
-        <li>Estruturação de dados</li>
-    </ul>
-    <hr>
-
-    <h1>Meus Projetos</h1>
     <style>
-        /*Define a largura da tabela para 50% da largura do elemento pai (normalmente o body)*/
-        table{
-            width: 50%; /* tabela fica proporcionalmente menor e mais compacta */
-
-            /* Remove o espaçamento entre bordas adjacentes para apresentar bordas únicas */
-            border-collapse: collapse;
-
-            /* Espaço inferior para separar visualmente da proxima seção */
-            margin-bottom: 20px;
+        body {
+            background-color: #f0f0f0;
         }
-
-
-        th,td{
-            border: 1px solid black; /* bordas pretas sólidas de 1px */
-            padding: 8px; /* espaçamento interno para "respirar o conteúdo" */
+        .produto {
+            width: 150px;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
         }
-
-        /* Estiliza as células do cabeçãlho */
-        th{
-            background-color: #333 ; /* fundo escuro para destaque */
-            color: white; /* texto branco para contraste e legibidade */
-        }
-
-        /* Estiliza a linha do rodapé da tabela */
-        tfoot {
-            background-color: #fff999; /* fundo amarelo para chamar atenção */
-            font-weight: bold; /* texto em negrito para importância */
-        }
-
-        td.num-right {
-            text-align: right;
-        }
-        
     </style>
 </head>
 <body>
     
-     <table>
-        <thead>
-            <tr>
-                <th>Projeto</th>
-                <th>Tecnologias</th>
-                <th>Status</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Norte</td>
-                <td class="num-right" style="white-space: nowrap;">R$ 10.000</td>
-                <td class="num-right" style="white-space: nowrap;">R$ 12.000</td>
-                <td class="num-right" style="white-space: nowrap;">R$ 15.000</td>
-            </tr>
-        </tbody>
-        <tfoot>
-             <tr>
-                <td></td>
-                <td class="num-right" style="white-space: nowrap;"></td>
-                <td class="num-right" style="white-space: nowrap;">Concluido</td>
-                <td class="num-right" style="white-space: nowrap;">R$ 15.000</td>
-                
-            </tr>
-        </tfoot>
-            <tr>
-                <td>Identidade Visual - Itaú</td>
-                <td>Github, VScode</td>
-            </tr>
-     </table>
+    <header>
+         <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+    </header>
+    <hr>
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <img src="assets/" alt="Foto de Juan Diego" class="produto">
+            <p>Sou estudante de <strong>Desenvolvimento de Sistemas no SENAI.</strong></p>
+            <p>Tenho conhecimento em <em>HTML, CSS e estou aprendendo JavaScript.</em></p>
+            <h3>Minhas Habilidades:</h3>
+            <ul>
+                <li>HTML5 Semântico</li>
+                <li>CSS3 e Responsividade</li>
+                <li>Formulários e Validação</li>
+                <li>Estruturação de Dados</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologias</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Projeto-Game</td>
+                        <td>VScode, HTML e Github</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/Juan2099-git/projeto-game">Ver Projeto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Projeto-Filme</td>
+                        <td>VScode, HTML, Github</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/Juan2099-git/projeto-filme">Ver Projeto</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pesquisa de Sites</td>
+                        <td>Google, Word, Github</td>
+                        <td>Concluído</td>
+                        <td><a href="https://github.com/Juan2099-git/atividade_aula3/blob/main/README.md">Ver Projeto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <!-- Seção Entre em Contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Dados do Contato</legend>
+                    <p>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label for="assunto">Assunto:</label><br>
+                        <select id="assunto" name="assunto">
+                            <option value="oportunidade">Oportunidade de Trabalho</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="25"></textarea>
+                    </p>
+                    <button type="submit">Enviar Mensagem</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Meta. Desenvolvido durante o curso do SENAI.</p>
+        <p>
+            <a href="juan.assumpcao@edu.senai.br">juan.assumpcao@edu.senai.br</a> |
+            <a href="tel:96653-8056">(11) 96653-8056</a>
+        </p>
+    </footer>
 </body>
 </html>
